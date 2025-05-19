@@ -1,0 +1,28 @@
+#!/bin/bash
+# Cleanup
+pkill tailscaled 2>/dev/null
+rm -f /tmp/tailscale.sock
+
+# Start daemon
+tailscaled --state=~/.config/tailscale/tailscaled.state \
+           --socket=/tmp/tailscale.sock \
+           --tun=userspace-networking > /tmp/tailscaled.log 2>&1 &
+
+# Wait for readiness
+for i in {1..10}; do
+  if tailscale --socket=/tmp/tailscale.sock status 2>/dev/null; then
+    break
+  fi
+  sleep 1
+done
+
+# Connect
+tailscale --socket=/tmp/tailscale.sock up \
+  --auth-key=$(cat ~/.config/tailscale/authkey) \
+  --accept-routes \
+  --accept-dns=false
+
+# Show status
+echo -e "\n✅ \033[1mTailscale Active\033[0m"
+tailscale --socket=/tmp/tailscale.sock status --peers=false
+echo -e "🔗 IP: $(tailscale --socket=/tmp/tailscale.sock ip -4)\n📂 Logs: /tmp/tailscaled.log"
