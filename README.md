@@ -48,3 +48,15 @@ chmod +x ~/start-tailscale ~/stop-tailscale
 | `tailscale status`  | Check connection |  
 
 ---
+
+## 🔐 Pro Tips  
+- 🔑 Use **reusable keys** for convenience  
+- 🗑️ **Revoke old keys** in [Tailscale Admin](https://login.tailscale.com/admin/authkeys)  
+
+---
+
+## ❓ Need Help?  
+```bash
+# Reset everything (fresh start)
+rm -rf ~/.config/tailscale/ /tmp/tailscale*
+```
