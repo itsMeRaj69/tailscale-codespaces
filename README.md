@@ -45,7 +45,6 @@ chmod +x ~/start-tailscale ~/stop-tailscale
 |---------|--------------|  
 | `~/start-tailscale` | Connect to your VPN |  
 | `~/stop-tailscale`  | Disconnect safely |  
-| `tailscale status`  | Check connection |  
 
 ---
 
@@ -55,8 +54,10 @@ chmod +x ~/start-tailscale ~/stop-tailscale
 
 ---
 
-## ❓ Need Help?  
+## ❓ Need Help?
 ```bash
 # Reset everything (fresh start)
 rm -rf ~/.config/tailscale/ /tmp/tailscale*
 ```
+
+📜 *MIT Licensed | Not affiliated with Tailscale Inc.*  
