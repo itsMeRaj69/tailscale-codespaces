@@ -37,3 +37,14 @@ wget -O ~/stop-tailscale https://raw.githubusercontent.com/itsMeRaj69/tailscale-
 ```bash
 chmod +x ~/start-tailscale ~/stop-tailscale
 ```
+
+---
+
+## 🛠️ Usage  
+| Command | What It Does |  
+|---------|--------------|  
+| `~/start-tailscale` | Connect to your VPN |  
+| `~/stop-tailscale`  | Disconnect safely |  
+| `tailscale status`  | Check connection |  
+
+---
