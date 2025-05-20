@@ -60,4 +60,5 @@ chmod +x ~/start-tailscale ~/stop-tailscale
 rm -rf ~/.config/tailscale/ /tmp/tailscale*
 ```
 
+
 📜 *MIT Licensed | Not affiliated with Tailscale Inc.*  
