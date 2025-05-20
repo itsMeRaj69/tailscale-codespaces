@@ -22,10 +22,8 @@ curl -fsSL https://tailscale.com/install.sh | sh
 1. Get a key from [Tailscale Admin](https://login.tailscale.com/admin/authkeys)
 2. Save it securely:
 ```bash
-mkdir -p ~/config/tailscale
-
+mkdir -p ~/.config/tailscale
 echo "tskey-auth-XXXXXX" > ~/.config/tailscale/authkey
-
 chmod 600 ~/.config/tailscale/authkey
 ```
 *(Replace `tskey-auth-XXXXXX` with your actual key)*
