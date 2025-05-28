@@ -19,7 +19,7 @@ curl -fsSL https://tailscale.com/install.sh | sh
 ```
 
 ### 2. Add Your Key
-1. Get a key from [Tailscale Admin](https://login.tailscale.com/admin/authkeys)
+1. Get a key from [Tailscale - AuthKeys](https://login.tailscale.com/admin/authkeys)
 2. Save it securely:
 ```bash
 mkdir -p ~/.config/tailscale
@@ -50,7 +50,7 @@ chmod +x ~/start-tailscale ~/stop-tailscale
 
 ## 🔐 Pro Tips  
 - 🔑 Use **reusable keys** for convenience  
-- 🗑️ **Revoke old keys** in [Tailscale Admin](https://login.tailscale.com/admin/authkeys)  
+- 🗑️ **Revoke old keys** in [Tailscale - AuthKeys](https://login.tailscale.com/admin/authkeys)  
 
 ---
 
