@@ -49,7 +49,7 @@ chmod +x ~/start-tailscale ~/stop-tailscale
 ---
 
 ## 🔐 Pro Tips  
-- 🔑 Use **reusable keys** for convenience  
+- ♻️ Use **reusable keys** for convenience  
 - 🗑️ **Revoke old keys** in [Tailscale - AuthKeys](https://login.tailscale.com/admin/authkeys)  
 
 ---
